@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body{
     justify-content: center;
     height: 100vh;
     background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
 }
 
 .grid-container{
@@ -29,26 +32,144 @@ body{
     height: 40%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background-color: orange;
 }
 
 .all-data{
     position: absolute;
     width: 180px;
-    height: 110px;
+    height: 120px;
     background-color: hsl(235, 46%, 20%);
-    top: 40px;
+    top: 30px;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.all-data:hover{
+    background-color: hsl(235, 45%, 61%);
 }
 
 .user-container{
     grid-row: 1/3;
     background-color: black;
     border-radius: 15px;
+    position: relative;
+}
+
+.user-informations{
+    height: 65%;
+    width: 180px;
+    border-radius: 15px;
+    position: absolute;
+    background: url(images/image-jeremy.png) no-repeat hsl(246, 80%, 60%);
+    background-size: 65px;
+    background-position: 20px 25px;
+}
+
+.user-period{
+    height: 100%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
 }
 
 .work-template{
-    background-color: #d96c47;
-    background-image: url(images/icon-work.svg);
-    background-repeat: no-repeat; 
+    background: url(images/icon-work.png) no-repeat hsl(15, 100%, 70%);
+    background-size: 50px;
+    background-position-x: 120px;
+    background-position-y: -6px;
 }
+
+.play-template{
+    background: url(images/icon-play.png) no-repeat hsl(195, 74%, 62%);
+    background-size: 50px;
+    background-position-x: 120px;
+    background-position-y: -3px;
+}
+
+.study-template{
+    background: url(images/icon-study.png) no-repeat hsl(348, 100%, 68%);
+    background-size: 50px;
+    background-position-x: 120px;
+    background-position-y: -3px;
+}
+
+.exercise-template{
+    background: url(images/icon-exercise.png) no-repeat hsl(145, 58%, 55%);
+    background-size: 50px;
+    background-position-x: 120px;
+}
+
+.social-template{
+    background: url(images/icon-social.png) no-repeat hsl(264, 64%, 52%);
+    background-size: 50px;
+    background-position-x: 120px;
+    background-position-y: -10px;
+}
+
+.self-care-template{
+    background: url(images/icon-self-care.png) no-repeat hsl(43, 84%, 65%);
+    background-size: 50px;
+    background-position-x: 120px;
+    background-position-y: -9px;
+}
+
+p{
+    margin-left: 20px;
+}
+.first-line{
+    margin-top: 120px;
+    font-size: 12px;
+    color: rgba(187, 187, 187, 0.842);
+}
+
+.second-line{
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+}
+
+.time{
+    padding-top: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time button{
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    margin-top: 12px;
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.time button:hover{
+    opacity: 1;
+}
+
+.all-activity{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 14px;
+    background: url(images/icon-ellipsis.svg) no-repeat 125px;
+    background-size: 10px;
+}
+
+.all-time{
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 14px;
+}
+
+.all-period{
+    font-size: 10px;
+    color: white;
+    opacity: 0.7;
+    margin-top: 3px;
+}
+
